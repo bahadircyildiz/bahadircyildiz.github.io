@@ -3,12 +3,22 @@ layout: page
 title: About
 permalink: /about/
 weight: 3
+
+# Project Partial Data
+projects:
+    title: "Projects"
+    remote_projects:
+    - MerdivanMobile
+    - PHPFuzzy
 ---
 
 # **About Me**
 
-Hi I am **{{ site.author.name }}** :wave:,<br>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+<div class="col-lg">
+    <p class="row text-justify">
+    Software Engineer with 6 years of experience, interested in trending technologies and developer-friendly solutions. Collaborated with world-wide projects and embraced the remote working principles. Mainly a JavaScript enthusiast. Huge fan of open-source community and DIY.
+    </p>
+</div>
 
 <div class="row">
 {% include about/skills.html title="Programming Skills" source=site.data.programming-skills %}
@@ -16,5 +26,9 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 </div>
 
 <div class="row">
-{% include about/timeline.html %}
+{% include about/timeline.html title="Job Experiences" source=site.data.job-experiences %}
+</div>
+
+<div class="row">
+{% include about/projects.html %}
 </div>

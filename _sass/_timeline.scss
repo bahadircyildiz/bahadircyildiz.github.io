@@ -37,10 +37,14 @@
       padding-bottom: 20px;
       border-bottom: 1px dashed $dark;
 
-      .date {
+      .timeline-item-date {
         margin-top: -5px;
         margin-bottom: 15px;
         color: #6c757d;
+      }
+
+      .timeline-item-company {
+        margin-top: -10px;
       }
     }
   }

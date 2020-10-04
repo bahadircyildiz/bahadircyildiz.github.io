@@ -4,6 +4,11 @@ collections_dir     : docs
 data_dir            : docs/_data
 baseurl             : ""
 repository          : bahadircyildiz/bahadircyildiz.github.io
+title               : Bahadir Can Yildiz
+description         : >-
+  I turn coffee :coffee: into code,
+  use tabs over spaces
+  and alias <i>rm</i> as <i>rm -i</i>.
 
 
 ### Navbar Settings ###
@@ -11,15 +16,16 @@ nav_exclude:
   - docs/pages/tags.html
   - docs/pages/404.html
   - docs/pages/index.md
-  - docs/pages/documentation/**
+  - docs/pages/projects.html
+  - docs/documentation/partials
 
 
 ### Author Info ###
 author:
   name              : Bahadir Can Yildiz
-  image             : https://avatars2.githubusercontent.com/u/41103290
+  image             : https://avatars1.githubusercontent.com/u/13020685
   github            : bahadircyildiz
-
+  linkedin          : bahadircyildiz
 
 ### Posts ###
 permalink: /blog/:title
@@ -74,3 +80,4 @@ exclude:
   - docs/Gemfile.lock
   - docs/_site/
   - docs/.sass-cache/
+  - docs/_config.yml
