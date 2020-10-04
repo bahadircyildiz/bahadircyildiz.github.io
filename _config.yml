@@ -81,3 +81,4 @@ exclude:
   - docs/_site/
   - docs/.sass-cache/
   - docs/_config.yml
+  - docs/documentation/partials
