@@ -1,11 +1,11 @@
 <!-- Remote Projects JS -->
 <script src="{{ '/assets/js/remote-projects.js' | relative_url }}"></script>
-{% if page.remote_projects %}
-  {% assign remote_projects = page.remote_projects %}
-  {% assign margintop = 'mt-5' %}
-{% elsif page.projects.remote_projects %}
-  {% assign remote_projects = page.projects.remote_projects %}
-{% endif %}
+{%- if page.remote_projects -%}
+  {%- assign remote_projects = page.remote_projects -%}
+  {%- assign margintop = 'mt-5' -%}
+{%- elsif page.projects.remote_projects -%}
+  {%- assign remote_projects = page.projects.remote_projects -%}
+{%- endif -%}
 
 <div class="card-columns m-3 {{ margintop }}">
 
