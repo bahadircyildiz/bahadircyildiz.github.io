@@ -1,13 +1,25 @@
-<div class="col mt-4">
-  <div class="timeline-body">
-    {% for item in site.data.timeline %}
-      <div class="timeline-item">
-        <div class="content">
-          <h2>{{ item.title }}</h2>
-          <h6 class="date">{{ item.from }} — {{ item.to }}</h6>
-          <p>{{ item.description }}</p>
+<div class="col-lg">
+  <h2 class="mb-3">{{ include.title }}</h2>
+  <div class="col mt-4">
+    <div class="timeline-body">
+      {% for item in include.source %}
+        <div class="timeline-item">
+          <div class="content">
+            <h2 class="timeline-item-title">{{ item.title }}</h2>
+            <h5 class="timeline-item-company">
+              {% if item.company.url %}
+                <a href="{{ item.company.url }}">
+                  {{ item.company.title }}
+                </a>
+              {% else %}
+                {{ item.company }}
+              {% endif %}
+            </h5>
+            <h6 class="timeline-item-date">{{ item.from }} — {{ item.to }}</h6>
+            <p>{{ item.description | markdownify }}</p>
+          </div>
         </div>
-      </div>
-    {% endfor %}
+      {% endfor %}
+    </div>
   </div>
 </div>
