@@ -3,10 +3,10 @@ class PDFHelper {
         Secret: 'K0OCZsUCJBJfSLa1',
         StoreFile: true,
         ConversionDelay: 1,
-        ViewportWidth: 1366,
+        ViewportWidth: 1600,
         ViewportHeight: 1024,
         LoadLazyContent: true,
-        HideElements: '#navbarNavAltMarkup'
+        HideElements: '#downloadCV, #attribution, div.navbar-nav.ml-auto'
     }
     baseUrl = new URL("https://v2.convertapi.com/convert/web/to/pdf")
 

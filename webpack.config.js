@@ -29,7 +29,7 @@ const TerserPlugin = require('terser-webpack-plugin');
 
 module.exports = {
   mode: 'development',
-  entry: ['babel-polyfill', './assets/js/src/index.js'],
+  entry: './assets/js/src/index.js',
   devtool: 'source-map',
 
   output: {

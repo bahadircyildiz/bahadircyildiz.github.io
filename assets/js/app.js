@@ -269,10 +269,10 @@ var PDFHelper = /*#__PURE__*/function () {
       Secret: 'K0OCZsUCJBJfSLa1',
       StoreFile: true,
       ConversionDelay: 1,
-      ViewportWidth: 1366,
+      ViewportWidth: 1600,
       ViewportHeight: 1024,
       LoadLazyContent: true,
-      HideElements: '#navbarNavAltMarkup'
+      HideElements: '#downloadCV, #attribution, div.navbar-nav.ml-auto'
     };
     this.baseUrl = new URL("https://v2.convertapi.com/convert/web/to/pdf");
     this.options.Url = targetURL;
@@ -364,9 +364,7 @@ function _downloadCV() {
       while (1) {
         switch (_context.prev = _context.next) {
           case 0:
-            pdf = new _PDFHelper__WEBPACK_IMPORTED_MODULE_2__.default('https://bahadircyildiz.github.io/about/', {
-              CoversionDelay: 1
-            });
+            pdf = new _PDFHelper__WEBPACK_IMPORTED_MODULE_2__.default('https://bahadircyildiz.github.io/about/?viewType=wide');
             _context.next = 3;
             return pdf.getPDFUrl();
 
@@ -392,11 +390,24 @@ function downloadURI(uri, name) {
   link.click();
 }
 
+function checkViewType() {
+  var url = new URL(window.location.href);
+  var viewType = url.searchParams.get("viewType");
+
+  if (viewType === 'wide') {
+    jquery__WEBPACK_IMPORTED_MODULE_4__('main').removeClass('container');
+    jquery__WEBPACK_IMPORTED_MODULE_4__('main').addClass('container-fluid');
+  }
+}
+
 window.get_tools = _remote_projects__WEBPACK_IMPORTED_MODULE_3__.default.get_tools;
 window.parse_tools = _remote_projects__WEBPACK_IMPORTED_MODULE_3__.default.parse_tools;
-window.PDFHelper = _PDFHelper__WEBPACK_IMPORTED_MODULE_2__.default;
 window.downloadCV = downloadCV;
 window.$ = jquery__WEBPACK_IMPORTED_MODULE_4__;
+
+window.onload = function () {
+  checkViewType();
+};
 
 /***/ }),
 
