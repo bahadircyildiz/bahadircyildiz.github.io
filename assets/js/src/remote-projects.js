@@ -22,3 +22,7 @@ function parse_tools(tools) {
     return span;
   });
 }
+
+export default {
+  get_tools, parse_tools
+}

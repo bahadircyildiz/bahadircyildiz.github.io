@@ -12,3 +12,6 @@ Gemfile.lock
 
 # Editor Files
 .vscode/
+
+# node_modules
+node_modules
