@@ -1,0 +1,40 @@
+{
+  "name": "my-webpack-project",
+  "version": "1.0.0",
+  "description": "My webpack project",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs",
+    "test": "test"
+  },
+  "scripts": {
+    "build": "bundle exec jecyll build",
+    "serve": "bundle exec jekyll serve",
+    "webpack": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bahadircyildiz/bahadircyildiz.github.io.git"
+  },
+  "author": "Bahadir Can Yildiz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bahadircyildiz/bahadircyildiz.github.io/issues"
+  },
+  "homepage": "https://github.com/bahadircyildiz/bahadircyildiz.github.io#readme",
+  "devDependencies": {
+    "@babel/core": "^7.12.3",
+    "@babel/plugin-proposal-class-properties": "^7.12.1",
+    "@babel/plugin-transform-runtime": "^7.12.1",
+    "@babel/preset-env": "^7.12.1",
+    "babel-loader": "^8.1.0",
+    "babel-plugin-syntax-dynamic-import": "^6.18.0",
+    "terser-webpack-plugin": "^5.0.0",
+    "webpack": "^5.1.3",
+    "webpack-cli": "^4.0.0"
+  },
+  "dependencies": {
+    "@babel/runtime": "^7.12.1",
+    "jquery": "^3.5.1"
+  }
+}

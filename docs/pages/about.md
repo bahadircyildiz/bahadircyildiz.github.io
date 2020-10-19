@@ -32,3 +32,7 @@ projects:
 <div class="row">
 {% include about/projects.html %}
 </div>
+
+<a id="downloadCV" class="m-1 btn btn-outline-primary btn-md btn-block" onclick="downloadCV();">
+  Download PDF
+</a>
