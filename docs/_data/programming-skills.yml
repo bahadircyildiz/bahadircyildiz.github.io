@@ -1,11 +1,11 @@
-- name: HTML5/CSS3
+- name: SFCC/SGJC/SFRA
   percentage: 100
   showPercentageNumber: false
 
-- name: Go
+- name: Javascript/Node.js/ES6
   percentage: 100
   showPercentageNumber: false
 
-- name: Python
+- name: PHP
   percentage: 100
   showPercentageNumber: false
