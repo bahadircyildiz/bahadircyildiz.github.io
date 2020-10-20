@@ -7,32 +7,41 @@ weight: 3
 # Project Partial Data
 projects:
     title: "Projects"
-    remote_projects:
-    - MerdivanMobile
-    - PHPFuzzy
 ---
 
-# **About Me**
+## Personal Information
 
-<div class="col-lg">
-    <p class="row text-justify">
-    Software Engineer with 6 years of experience, interested in trending technologies and developer-friendly solutions. Collaborated with world-wide projects and embraced the remote working principles. Mainly a JavaScript enthusiast. Huge fan of open-source community and DIY.
-    </p>
+**Address**     : 77 sok. No:7 Daire:3 Göztepe Mahallesi, Konak/IZMIR – TR
+
+**GSM**         : +90 505 801 7933
+
+**E-Mail**      : [bahadircanyildiz@gmail.com](mailto:bahadircanyildiz@gmail.com)
+
+## About Me
+
+Software Engineer with 6 years of experience, interested in trending technologies and developer-friendly solutions. Collaborated with world-wide projects and embraced the remote working principles. Mainly a JavaScript enthusiast. Huge fan of open-source community and DIY.
+
+<div class="row">
+    {% include about/timeline.html title="Educational Information" source=site.data.education %}
 </div>
 
 <div class="row">
-{% include about/skills.html title="Programming Skills" source=site.data.programming-skills %}
-{% include about/skills.html title="Other Skills" source=site.data.other-skills %}
+    <div class="col-8">
+        {% include about/c_skills.html title="Programming Skills" source=site.data.programming-skills %}
+    </div>
+    <div class="col-4">
+        {% include about/skills.html title="Other" source=site.data.other-skills %}
+    </div>
 </div>
 
 <div class="row">
-{% include about/timeline.html title="Job Experiences" source=site.data.job-experiences %}
+    {% include about/timeline.html title="Job Experiences" source=site.data.job-experiences %}
 </div>
 
 <div class="row">
-{% include about/projects.html %}
+    {% include about/projects.html %}
 </div>
 
 <a id="downloadCV" class="m-1 btn btn-outline-primary btn-md btn-block" onclick="downloadCV();">
-  Download PDF
+    Download PDF
 </a>

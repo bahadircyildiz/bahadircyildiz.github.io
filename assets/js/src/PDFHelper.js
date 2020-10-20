@@ -2,7 +2,7 @@ class PDFHelper {
     options = {
         Secret: 'K0OCZsUCJBJfSLa1',
         StoreFile: true,
-        ConversionDelay: 1,
+        ConversionDelay: 0.5,
         ViewportWidth: 1600,
         ViewportHeight: 1024,
         LoadLazyContent: true,

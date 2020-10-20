@@ -1,7 +1,9 @@
-- name: Adobe Photoshop
-  percentage: 95
-  color: info
-
-- name: Adobe Illustrator
-  percentage: 90
-  color: success
+- name: Gulp, Webpack, CI
+  percentage: 100
+  showPercentageNumber: false
+- name: Git, Docker, Linux
+  percentage: 100
+  showPercentageNumber: false
+- name: Agile, Scrum
+  percentage: 100
+  showPercentageNumber: false

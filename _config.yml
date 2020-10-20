@@ -17,7 +17,7 @@ nav_exclude:
   - docs/pages/404.html
   - docs/pages/index.md
   - docs/pages/projects.html
-  - docs/documentation/partials
+  - docs/documentation/partials/**
 
 
 ### Author Info ###
@@ -45,7 +45,7 @@ collections:
 analytics:
   enabled: true
   google:
-    tracking_id: google-tracking-id
+    tracking_id: UA-180913002-1
 
 
 ### Defaults for collections ###
