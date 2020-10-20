@@ -26,7 +26,12 @@ Software Engineer with 6 years of experience, interested in trending technologie
 </div>
 
 <div class="row">
-    {% include about/skills.html title="Programming Skills" source=site.data.programming-skills column-count= 3%}
+    <div class="col-8">
+        {% include about/c_skills.html title="Programming Skills" source=site.data.programming-skills %}
+    </div>
+    <div class="col-4">
+        {% include about/skills.html title="Other" source=site.data.other-skills %}
+    </div>
 </div>
 
 <div class="row">

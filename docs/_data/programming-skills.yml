@@ -1,11 +1,18 @@
-- name: SFCC/SGJC/SFRA
-  percentage: 100
-  showPercentageNumber: false
-
-- name: Javascript/Node.js/ES6
-  percentage: 100
-  showPercentageNumber: false
-
-- name: PHP
-  percentage: 100
-  showPercentageNumber: false
+- - name: SFCC, SGJC, SFRA
+    percentage: 100
+    showPercentageNumber: false
+  - name: Javascript, Node.js, Nest.js
+    percentage: 100
+    showPercentageNumber: false
+  - name: PHP 7.1, Laravel, Yii Framework
+    percentage: 100
+    showPercentageNumber: false
+- - name: HTML5, CSS3, SASS
+    percentage: 100
+    showPercentageNumber: false
+  - name: ES6, jQuery, Vue.js
+    percentage: 100
+    showPercentageNumber: false
+  - name: MySQL, MongoDB, TypeORM
+    percentage: 100
+    showPercentageNumber: false

@@ -8,7 +8,7 @@
     "test": "test"
   },
   "scripts": {
-    "build": "bundle exec jecyll build",
+    "build": "bundle exec jekyll build",
     "serve": "bundle exec jekyll serve",
     "webpack": "webpack"
   },
