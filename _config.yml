@@ -75,6 +75,7 @@ plugins:
 
 
 exclude:
+  - node_modules
   - test/
   - docs/Gemfile
   - docs/Gemfile.lock
