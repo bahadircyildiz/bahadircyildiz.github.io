@@ -4,7 +4,11 @@
   margin: 10px auto;
 
   .card-img-top {
-    border-radius: $rounded-borders $rounded-borders 0 0;
+    border-radius: $rounded-borders;
+    // max-width: 30%;
+    // position: relative;
+    // display:inline-block;
+    // margin: 1rem;
   }
 
   transition: transform 400ms;

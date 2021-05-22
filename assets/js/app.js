@@ -277,7 +277,7 @@ var PDFHelper = /*#__PURE__*/function () {
     this.options = {
       Secret: 'K0OCZsUCJBJfSLa1',
       StoreFile: true,
-      ConversionDelay: 0.5,
+      ConversionDelay: 1,
       ViewportWidth: 1600,
       ViewportHeight: 1024,
       LoadLazyContent: true,
